@@ -69,7 +69,6 @@ section .panel-section .panel .step-1 .consoles {
 }
 
 section .panel-section .panel .step-1 .consoles div {
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,6 +98,10 @@ section .panel-section .panel .step-1 .consoles div p:first-child {
 
 section .panel-section .panel .step-1 .consoles div p:nth-child(2n) {
     background-color: #f4f4f4;
+}
+
+section .panel-section .panel .step-1 .consoles div p:nth-child(3n), :nth-child(5n) {
+    background-color: #fff;
 }
 
 section .panel-section .panel .step-1 .consoles div p:last-child {
