@@ -1,3 +1,5 @@
+import { links } from "./links.js"
+
 const xy  = document.getElementById('xy')
 const oras = document.getElementById('oras')
 const sm = document.getElementById('sm')
@@ -11,10 +13,12 @@ const home = document.getElementById('home')
 const games = [xy, oras, sm, usum, bundles, lgpe, swsh, bdsp, arceus, home]
 
 let selectedGame
+let availableLinks = []
 
 games.forEach(game => {
     game.addEventListener('click', e => {
         selectedGame = e.target
+        console.log(selectedGame.textContent)
         selectedGame.classList.add('selected')
         games.forEach(game => {
             if (game !== selectedGame) {
