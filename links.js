@@ -1,25 +1,33 @@
 const pokemon = {
-    'Articuno': {
-        'usum': 'https://www.ebay.com/itm/284263334726',
+    'Ditto': {
+        'usum': '',
         'lgpe': '',
-        'swsh': 'https://www.ebay.com/itm/284263334726',
-        'bdsp': '',
+        'swsh': '',
+        'bdsp': 'https://www.ebay.com/itm/284640740487',
         'arceus': '',
         'home': ''
     },
+    'Articuno': {
+        'usum': 'https://www.ebay.com/itm/284263334726',
+        'lgpe': 'https://www.ebay.com/itm/284480485748',
+        'swsh': 'https://www.ebay.com/itm/284263334726',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
+        'arceus': '',
+        'home': 'https://www.ebay.com/itm/284263334726'
+    },
     'Zapdos': {
         'usum': 'https://www.ebay.com/itm/284263334726',
-        'lgpe': '',
+        'lgpe': 'https://www.ebay.com/itm/284480485748',
         'swsh': 'https://www.ebay.com/itm/284263334726',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
     'Moltres': {
         'usum': 'https://www.ebay.com/itm/284263334726',
-        'lgpe': '',
+        'lgpe': 'https://www.ebay.com/itm/284480485748',
         'swsh': 'https://www.ebay.com/itm/284263334726',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -27,7 +35,7 @@ const pokemon = {
         'usum': 'https://www.ebay.com/itm/284059664536',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284059664536',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -35,7 +43,15 @@ const pokemon = {
         'usum': 'https://www.ebay.com/itm/284263344004',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263344004',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284535920667',
+        'arceus': '',
+        'home': ''
+    },
+    'Unown': {
+        'usum': '',
+        'lgpe': '',
+        'swsh': '',
+        'bdsp': 'https://www.ebay.com/itm/284867074822',
         'arceus': '',
         'home': ''
     },
@@ -43,7 +59,7 @@ const pokemon = {
         'usum': 'https://www.ebay.com/itm/284263335497',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263335497',
-        'bdsp': 'https://www.ebay.com/itm/284263335497',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': 'https://www.ebay.com/itm/284263335497'
     },
@@ -51,7 +67,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263335497',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -59,7 +75,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263335497',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -67,7 +83,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263336792',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -75,7 +91,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263336792',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -91,7 +107,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263338767',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -99,7 +115,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263338767',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -107,7 +123,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263338767',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -115,7 +131,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263343155',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -123,7 +139,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263343155',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -131,7 +147,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263345800',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -139,7 +155,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263345800',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -147,7 +163,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263345800',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -155,7 +171,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263071070',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284535920908',
         'arceus': '',
         'home': ''
     },
@@ -171,7 +187,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263346282',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -179,7 +195,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263346282',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -187,7 +203,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263346282',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -195,7 +211,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263346988',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284535922354',
         'arceus': '',
         'home': ''
     },
@@ -203,7 +219,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263346988',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284535922580',
         'arceus': '',
         'home': ''
     },
@@ -211,7 +227,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263328453',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -219,7 +235,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263338767',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -227,7 +243,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263346988',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -235,7 +251,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263327716',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -243,7 +259,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263362305',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -251,7 +267,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263362305',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284872338443',
         'arceus': '',
         'home': ''
     },
@@ -259,7 +275,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263362305',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284867121080',
         'arceus': '',
         'home': ''
     },
@@ -267,7 +283,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263362305',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284768758536',
         'arceus': '',
         'home': ''
     },
@@ -275,7 +291,7 @@ const pokemon = {
         'usum': '',
         'lgpe': '',
         'swsh': 'https://www.ebay.com/itm/284263362305',
-        'bdsp': '',
+        'bdsp': 'https://www.ebay.com/itm/284768758140',
         'arceus': '',
         'home': ''
     },
