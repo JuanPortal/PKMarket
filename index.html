@@ -1,188 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/Logo.png" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/media/Logo.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>PKMarket</title>
 </head>
+
 <body>
-    <header>
-        
-    </header>
 
-    <section class="cover">
-        <div class="choose-language">
-            <p id="choose">Choose language</p>
-            <img id="enFlag" src="img/en-flag.png" alt="American flag">
-            <img id="esFlag" src="img/es-flag.png" alt="Spanish flag">
-        </div>
 
-        <div class="container1 story">
-            <div class="story-box">
-                <img src="img/main.jpg" alt="Two people trading pokemon">
-            </div>
-            <div class="story-box">
-                <div>
-                    <h2 id="question">Never completed your Pokédex?</h2>
-                    <p id="story">Neither did I! As hard as I tried, I didn't know about the Link cable; and when I did, my friends wouldn't play. I spent years trying to complete it and nothing. Now I dedicate myself to help more people complete their Pokédex or have better pokemon for competitive battles.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pokemon" id="section">
-        <div class="container2">
-            <div class="selection">
-                <div class="step1">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <h3 id="firstStep">Choose your game</h3>
+    <section id='section'>
+        <div class="panel-section">
+            <div class="panel">
+                <div class="step-1">
+                    <div class="title">
+                        <span>1</span>
+                        <h3>Choose your game</h3>
                     </div>
-                    <div class="games">
-                        <ul class="table3DS">
-                            <li class="hex0069b5">3DS</li>
-                            <li id="XY">X / Y</li>
-                            <li class="hexf4f4f4" id="ORAS">Omega Ruby / Alpha Sapphire</li>
-                            <li id="SM">Sun / Moon</li>
-                            <li class="hexf4f4f4" id="USUM">Ultra Sun / Ultra Moon</li>
-                            <li id="Bundles3DS">Bundles</li>
-                        </ul>
-                        <ul class="tableSwitch">
-                            <li class="hex0069b5">SWITCH</li>
-                            <li id="SS">Sword / Shield</li>
-                            <li class="hexf4f4f4" id="HOME">HOME</li>
-                            <li class="switch-bundles" id="BundlesSwitch">Bundles</li>
-                        </ul>
+                    <div class="consoles">
+                        <div id='console3DS'>
+                            <p>3DS</p>
+                            <p id='xy'>X / Y</p>
+                            <p id='oras'>Omega Ruby / Alpha Sapphire</p>
+                            <p id='sm'>Sun / Moon</p>
+                            <p id='usum'>Ultra Sun / Ultra Moon</p>
+                            <p id='bundles'>Bundles</p>
+                        </div>
+                        <div id='consoleSwitch'>
+                            <p>SWITCH</p>
+                            <p id='lgpe'>Let's Go Pikachu / Eevee</p>
+                            <p id='swsh'>Sword / Shield</p>
+                            <p id='bdsp'>Brilliant Diamond / Shining Pearl</p>
+                            <p id='arceus'>Legends: Arceus</p>
+                            <p id='home'>HOME</p>
+                        </div>
                     </div>
                 </div>
-                <div class="step2">
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <h3 id="secondStep">Search your pokemon</h3>
+
+                <div class="step-2">
+                    <div class="title">
+                        <span>2</span>
+                        <h3>Search your pokemon</h3>
                     </div>
-                    <div>
-                        <label for="search" id="searchByName">Search by name</label>
-                        <input type="text" name="searchBar" id="search" list="species" placeholder="Pokémon">
+                    <form id='form'>
+                        <label for="searchBar" id="searchLabel">Search by name</label>
+                        <input type="text" name="searchBar" id="searchBar" list="pokemonList" placeholder="Pokémon">
                         <i class="fa fa-search"></i>
-                        <datalist id="species">
-                            <!-- <option value="Articuno">Articuno</option>
-                            <option value="Zapdos">Zapdos</option>
-                            <option value="Moltres">Moltres</option>
-                            <option value="Mewtwo">Mewtwo</option>
-                            <option value="Mew">Mew</option>
-                            <option value="Raikou">Raikou</option>
-                            <option value="Entei">Entei</option>
-                            <option value="Suicune">Suicune</option>
-                            <option value="Lugia">Lugia</option>
-                            <option value="Ho-Oh">Ho-Oh</option>
-                            <option value="Celebi">Celebi</option>
-                            <option value="Regirock">Regirock</option>
-                            <option value="Regice">Regice</option>
-                            <option value="Registeel">Registeel</option>
-                            <option value="Latias">Latias</option>
-                            <option value="Latios">Latios</option>
-                            <option value="Kyogre">Kyogre</option>
-                            <option value="Groudon">Groudon</option>
-                            <option value="Rayquaza">Rayquaza</option>
-                            <option value="Jirachi">Jirachi</option>
-                            <option value="Deoxys">Deoxys</option>
-                            <option value="Uxie">Uxie</option>
-                            <option value="Mesprit">Mesprit</option>
-                            <option value="Azelf">Azelf</option>
-                            <option value="Dialga">Dialga</option>
-                            <option value="Palkia">Palkia</option>
-                            <option value="Heatran">Heatran</option>
-                            <option value="Regigigas">Regigigas</option>
-                            <option value="Giratina">Giratina</option>
-                            <option value="Cresselia">Cresselia</option>
-                            <option value="Phione">Phione</option>
-                            <option value="Manaphy">Manaphy</option>
-                            <option value="Darkrai">Darkrai</option>
-                            <option value="Shaymin">Shaymin</option>
-                            <option value="Arceus">Arceus</option>
-                            <option value="Victini">Victini</option>
-                            <option value="Cobalion">Cobalion</option>
-                            <option value="Terrakion">Terrakion</option>
-                            <option value="Virizion">Virizion</option>
-                            <option value="Tornadus">Tornadus</option>
-                            <option value="Thundurus">Thundurus</option>
-                            <option value="Reshiram">Reshiram</option>
-                            <option value="Zekrom">Zekrom</option>
-                            <option value="Landorus">Landorus</option>
-                            <option value="Kyurem">Kyurem</option>
-                            <option value="Keldeo">Keldeo</option>
-                            <option value="Meloetta">Meloetta</option>
-                            <option value="Genesect">Genesect</option>
-                            <option value="Xerneas">Xerneas</option>
-                            <option value="Yveltal">Yveltal</option>
-                            <option value="Zygarde">Zygarde</option>
-                            <option value="Diancie">Diancie</option>
-                            <option value="Hoopa">Hoopa</option>
-                            <option value="Volcanion">Volcanion</option>
-                            <option id="typeNull" value="Type: Null">Type: Null</option>
-                            <option value="Silvally">Silvally</option>
-                            <option value="Tapu Koko">Tapu Koko</option>
-                            <option value="Tapu Lele">Tapu Lele</option>
-                            <option value="Tapu Bulu">Tapu Bulu</option>
-                            <option value="Tapu Fini">Tapu Fini</option>
-                            <option value="Solgaleo">Solgaleo</option>
-                            <option value="Lunala">Lunala</option>
-                            <option value="Nihilego">Nihilego</option>
-                            <option value="Buzzwole">Buzzwole</option>
-                            <option value="Pheromosa">Pheromosa</option>
-                            <option value="Xurkitree">Xurkitree</option>
-                            <option value="Celesteela">Celesteela</option>
-                            <option value="Kartana">Kartana</option>
-                            <option value="Guzzlord">Guzzlord</option>
-                            <option value="Necrozma">Necrozma</option>
-                            <option value="Magearna">Magearna</option>
-                            <option value="Marshadow">Marshadow</option>
-                            <option value="Poipole">Poipole</option>
-                            <option value="Naganadel">Naganadel</option>
-                            <option value="Stakataka">Stakataka</option>
-                            <option value="Blacephalon">Blacephalon</option>
-                            <option value="Zeraora">Zeraora</option>
-                            <option value="Meltan">Meltan</option>
-                            <option value="Melmetal">Melmetal</option>
-                            <option value="Zacian">Zacian</option>
-                            <option value="Zamazenta">Zamazenta</option>
-                            <option value="Eternatus">Eternatus</option>
-                            <option value="Kubfu">Kubfu</option>
-                            <option value="Urshifu">Urshifu</option>
-                            <option value="Zarude">Zarude</option>
-                            <option value="Regieleki">Regieleki</option>
-                            <option value="Regidrago">Regidrago</option>
-                            <option value="Glastrier">Glastrier</option>
-                            <option value="Spectrier">Spectrier</option>
-                            <option value="Calyrex">Calyrex</option>
-                            <option value="Wyrdeer">Wyrdeer</option>
-                            <option value="Kleavor">Kleavor</option>
-                            <option value="Ursaluna">Ursaluna</option>
-                            <option value="Basculegion">Basculegion</option>
-                            <option value="Sneasler">Sneasler</option>
-                            <option value="Overqwil">Overqwil</option>
-                            <option value="Enamorus">Enamorus</option> -->
-                        </datalist>
-                    </div>
+                        <datalist id="pokemonList"></datalist>
+                    </form>
                 </div>
-                <div class="step3">
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <h3 id="thirdStep">Select your prefered site and get it!</h3>
+
+                <div class="step-3">
+                    <div class="title">
+                        <span>3</span>
+                        <h3>Select your preferred site and get it!</h3>
+                    </div>
+                    <div class="links hidden">
+                        <a href="#"><img src="/media/eBay.png" title="eBay logo" alt="eBay logo"></a>
+                        <a href="#"><img src="/media/Mercado Libre.png" title="Mercado Libre logo" alt="Mercado Libre logo"></a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <img id="picture" src="img/3DS/Arceus shiny.jpg" alt="">
+        <div class="image-section">
+            <img id='pokemonSprite' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/132.png" alt="pokemon's sprite">
+        </div>
     </section>
 
-    <script src="translation.js"></script>
-    <script src="pokemon.js"></script>
-    <script src="getPokemon.js"></script>
+    <script src='/getPokemonList.js'></script>
+    <script src='/getPokemonSprite.js'></script>
+    <script src='/handleBackground.js'></script>
+    <script src='/handleLinks.js'></script>
+    <script src="/links.js"></script>
 </body>
+
 </html>
