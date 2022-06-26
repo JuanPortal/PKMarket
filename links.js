@@ -1,4 +1,13 @@
 const pokemon = {
+    'Pikachu': {
+        'usum': 'https://www.ebay.com/itm/284263011772',
+        'lgpe': 'https://www.ebay.com/itm/284480345204',
+        'swsh': 'https://www.ebay.com/itm/284263011772',
+        'bdsp': 'https://www.ebay.com/itm/284535919709',
+        'arceus': 'https://www.ebay.com/itm/284640699083',
+        'home': 'https://www.ebay.com/itm/284263011772',
+        'bundles': []
+    },
     'Ditto': {
         'usum': 'https://www.ebay.com/itm/284188320286',
         'lgpe': 'https://www.ebay.com/itm/284480345204',
