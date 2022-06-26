@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header{
+    height: 30vh;
+    background-image: url("img/Banner.png");
+    background-size: cover;
+}
+
+/* SECTION */
+section{
+    background-image: url("img/pattern.png");
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* COVER */
+.cover{
+    height: 70vh;
+    position: relative;
+}
+
+/* LANGUAGE */
+.choose-language{
+    position: absolute;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    right: 30px;
+    padding: 10px;
+}
+
+.choose-language p{
+    display: inline;
+}
+
+.choose-language img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* CONTAINER */
+.container1{
+    width: 85%;
+}
+
+/* STORY */
+.story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story .story-box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story .story-box img{
+    width: 80%;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.story .story-box div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.story .story-box div h2{
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.story .story-box div p{
+    font-weight: 300;
+}
+
+/* POKEMON */
+.pokemon{
+    height: 100vh;
+    background-image: url("img/3DS\ Background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.container2{
+    width: 85%;
+}
+
+.selection{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+/* STEPS */
+.step{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.step .step-number{
+    margin-right: 10px;
+    display: inline-block;
+    background-color: #fb3718;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+/* STEP 1 */
+.step1{
+    margin-bottom: 20px;
+}
+
+.step1 .step{
+    margin-bottom: 15px;
+}
+
+.selection .step1 .games{
+    display: flex;
+}
+
+.selection .table3DS{
+    margin-right: 20px;
+    width: 250px;
+}
+
+.selection .tableSwitch{
+    height: 160px;
+    width: 140px;
+}
+
+.selection ul{
+    list-style-type: none;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.selection ul li:not(.hex0069b5){
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.selection ul li:hover:not(.hex0069b5){
+    font-weight: 600;
+}
+
+.selected{
+    color: #0069b5;
+    font-weight: 600;
+}
+
+.hex0069b5{
+    background-color: #0069b5;
+    border-radius: 13px 13px 0 0;
+    color: white;
+    font-weight: 300;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexf4f4f4{
+    background-color: #f4f4f4;
+}
+
+/* STEP 2 */
+.step2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.step2 .step{
+    margin-bottom: 15px;
+}
+
+.step2 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step2 label{
+    display: inline-block;
+    height: 40px;
+    background-color: #0069b5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px 0 0 13px;
+    width: 250px;
+    font-size: small;
+    font-weight: 300;
+}
+
+.step2 input{
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.step2 input:focus{
+    outline: none;
+}
+
+.step2 i{
+    width: 30px;
+    background-color: #ffffff;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 0 13px 13px 0;
+    cursor: text;
+}
+
+/* POKEMON IMAGE */
+#picture{
+    border-radius: 5px;
+    position: absolute;
+    width: 25.6%;
+    left: 52%;
+    top: 15.5%;
+}
+
+
+
+@media (max-width: 700px){
+    #picture{
+        border: 3px solid red;
+    }
+}
+
+@media (max-width: 500px){
+    #picture{
+        border: 3px solid blue;
+    }
+}
