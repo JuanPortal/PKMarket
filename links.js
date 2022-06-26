@@ -1,4 +1,4 @@
-const pokemon = {
+export const links = {
     'Pikachu': {
         'usum': 'https://www.ebay.com/itm/284263011772',
         'lgpe': 'https://www.ebay.com/itm/284480345204',
