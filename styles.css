@@ -96,12 +96,12 @@ section .panel-section .panel .step-1 .consoles div p:first-child {
     border-radius: 0.8rem 0.8rem 0 0;
 }
 
-section .panel-section .panel .step-1 .consoles div p:nth-child(2n) {
-    background-color: #f4f4f4;
-}
-
 section .panel-section .panel .step-1 .consoles div p:nth-child(3n), :nth-child(5n) {
     background-color: #fff;
+}
+
+section .panel-section .panel .step-1 .consoles div p:nth-child(2n) {
+    background-color: #efeded;
 }
 
 section .panel-section .panel .step-1 .consoles div p:last-child {

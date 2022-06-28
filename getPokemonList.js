@@ -8,7 +8,7 @@ async function fetchPokemon() {
     }
 }
 
-function formatName(name) {
+export function formatName(name) {
     name = name.replace('-', ' ').replace('-', ' ').replace('-', ' ').replace('-', ' ')
     const words = name.split(" ");
     for (let i = 0; i < words.length; i++) {
