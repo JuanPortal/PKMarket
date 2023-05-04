@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { PKMarket } from './PKMarket'
+import { Banner } from './Banner'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <PKMarket />
+        <Banner />
     </React.StrictMode>
 )
