@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Banner } from './Banner'
+import { Cover } from './Cover'
+import './styles.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Banner />
+        <Cover />
     </React.StrictMode>
 )
