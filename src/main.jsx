@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { App } from './PKMarket'
+import { PKMarket } from './PKMarket'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <App />
+        <PKMarket />
     </React.StrictMode>
 )
