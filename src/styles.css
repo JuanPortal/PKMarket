@@ -100,3 +100,19 @@ img {
     font-size: clamp(7px, 2vw, 20px);
     text-align: justify;
 }
+
+/* CATALOGUE */
+
+.catalogue {
+    height: 100vh;
+    background-image: url('../images/pattern.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listing {
+    background-color: rgb(205, 80, 80);
+}

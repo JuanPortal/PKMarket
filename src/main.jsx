@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Cover } from './Cover'
 import './styles.css'
+import { Cover } from './Cover'
+import { Catalogue } from './Catalogue'
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Cover />
+        {/* <Cover /> */}
+        <Catalogue />
     </React.StrictMode>
 )
