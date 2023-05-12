@@ -8,7 +8,7 @@ import { Catalogue } from './Catalogue'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        {/* <Cover /> */}
+        <Cover />
         <Catalogue />
     </React.StrictMode>
 )
