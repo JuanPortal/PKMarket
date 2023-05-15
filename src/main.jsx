@@ -7,6 +7,7 @@ import { Delivery } from './Delivery'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
+        <h1>PKMarket</h1>
         <Cover />
         <Catalogue />
         <Delivery />

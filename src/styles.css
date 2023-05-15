@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+h1 {
+    display: none;
+}
+
 /* COVER */
 
 .cover {
@@ -57,7 +61,7 @@
 
 /* STORY */
 
-.story{
+.story {
     height: 65vh;
     width: 100%;
     background-image: url('../images/pattern.png');
@@ -76,7 +80,7 @@
     align-items: center;
 }
 
-img {
+.story-container img {
     width: min(40%, 700px);
 }
 
@@ -206,7 +210,7 @@ img {
 
 .delivery {
     width: 100%;
-    height: 65vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -225,7 +229,6 @@ img {
     max-width: 90%;
     height: 60vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -243,6 +246,7 @@ img {
 }
 
 .delivery .consoles .console img {
+    width: 300px;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -257,4 +261,222 @@ img {
 
 .delivery .consoles .console .instructions p {
     text-align: center;
+}
+
+/* RESPONSIVE */
+
+/* Small Phones */
+@media screen and (max-width: 400px) {
+    .banner {
+        justify-content: flex-start;
+    }
+
+    .banner .icons {
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    .story-container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .story-container img {
+        padding-top: 20px;
+        width: 200px;
+    }
+
+    .story-text {
+        width: 85%;
+    }
+
+    .story-text p:first-child {
+        font-size: 23px;
+    }
+    
+    .story-text p:last-child {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .catalogue {
+        height: 300vh;
+    }
+
+    .catalogue h2 {
+        font-size: 40px;
+    }
+
+    .catalogue-section {
+        height: 45vh;
+    }
+
+    .catalogue-titles h3 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    
+    .catalogue-titles h4 {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .catalogue-section:nth-child(2n+1) .catalogue-titles h3 {
+        align-self: flex-start;
+    }
+
+    .carousel img {
+        width: 40%;
+    }
+
+    .availability .games-container img {
+        width: 80px;
+    }
+
+    .delivery {
+        height: 120vh;
+        display: flex;
+    }
+
+    .delivery h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .delivery .consoles {
+        gap: 20px;
+        flex-direction: column;
+        height: 85%;
+    }
+
+    .delivery .consoles .console {
+        width: 95%;
+    }
+
+    .delivery .consoles .console img {
+        width: 150px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 576px) {
+    .banner {
+        justify-content: flex-start;
+    }
+
+    .banner .icons {
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    .story-container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .story-container img {
+        padding-top: 20px;
+        width: 200px;
+    }
+
+    .story-text {
+        width: 85%;
+    }
+
+    .story-text p:first-child {
+        font-size: 23px;
+    }
+    
+    .story-text p:last-child {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .catalogue {
+        height: 300vh;
+    }
+
+    .catalogue h2 {
+        font-size: 40px;
+    }
+
+    .catalogue-section {
+        height: 45vh;
+    }
+
+    .catalogue-titles h3 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    
+    .catalogue-titles h4 {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .catalogue-section:nth-child(2n+1) .catalogue-titles h3 {
+        align-self: flex-start;
+    }
+
+    .carousel img {
+        width: 40%;
+    }
+
+    .availability .games-container img {
+        width: 80px;
+    }
+
+    .delivery {
+        height: 120vh;
+        display: flex;
+    }
+
+    .delivery h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .delivery .consoles {
+        gap: 20px;
+        flex-direction: column;
+        height: 85%;
+    }
+
+    .delivery .consoles .console {
+        width: 95%;
+    }
+
+    .delivery .consoles .console img {
+        width: 150px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
+  
+/* Tablets */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+}
+
+/* Medium devices (laptops, desktops) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+}
+
+/* Large devices (large laptops, desktops) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+/* Extra large devices (larger desktops, wide screens) */
+@media screen and (min-width: 1201px) {
+
 }
