@@ -1,10 +1,11 @@
 import React from 'react'
+import peopleTrading from '../images/people_trading.png'
 
 export const Story = () => {
   return (
     <div className='story'>
         <div className='story-container'>
-            <img src="../images/people_trading.png" alt="People trading pokemon in a GameBoy Color" />
+            <img src={peopleTrading} alt="People trading pokemon in a GameBoy Color" />
             <div className='story-text'>
                 <p>Never completed your Pokédex? Neither did I!</p>
                 <p>
