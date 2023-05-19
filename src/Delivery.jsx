@@ -1,4 +1,6 @@
 import React from 'react'
+import console1 from '../images/3DS.png'
+import console2 from '../images/Switch.png'
 
 export const Delivery = () => {
   return (
@@ -6,7 +8,7 @@ export const Delivery = () => {
         <h3>How will I receive my pokémon?</h3>
         <div className="consoles">
             <div className="console">
-                <img src="../images/3DS.png" alt="" />
+                <img src={console1} alt="" />
                 <div className="instructions">
                     <p>1. Add 2380 9651 1346 to your friends list</p>
                     <p>2. Send me your friend code</p>
@@ -14,7 +16,7 @@ export const Delivery = () => {
                 </div>
             </div>
             <div className="console">
-                <img src="../images/Switch.png" alt="" />
+                <img src={console2} alt="" />
                 <div className="instructions">
                     <p>1. Nintendo Switch Online needed</p>
                     <p>2. Enter the Link Trade code I'll send you</p>

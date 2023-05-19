@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Games = ({name, title}) => {
+export const Games = ({title, src}) => {
   return (
-        <img src={`/images/games/${name}.png`} alt="Game logo" title={title}/>
+        <img src={src} alt="Game logo" title={title}/>
   )
 }

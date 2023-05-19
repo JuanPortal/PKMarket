@@ -1,6 +1,15 @@
 import React from 'react'
 import { Section } from './Section'
 import { Games } from './Games'
+import game1 from '../images/games/XY.png'
+import game2 from '../images/games/ORAS.png'
+import game3 from '../images/games/SM.png'
+import game4 from '../images/games/USUM.png'
+import game5 from '../images/games/LGPE.png'
+import game6 from '../images/games/SWSH.png'
+import game7 from '../images/games/BDSP.png'
+import game8 from '../images/games/PLA.png'
+import game9 from '../images/games/SV.png'
 
 export const Catalogue = () => {
   return (
@@ -13,15 +22,15 @@ export const Catalogue = () => {
         <div className='availability'>
             <p>Available for all these games:</p>
             <div className="games-container">
-            <Games name='XY' title='Pokémon X & Pokémon Y'/>
-            <Games name='ORAS' title='Pokémon Omega Ruby & Pokémon Alpha Sapphire'/>
-            <Games name='SM' title='Pokémon Sun & Pokémon Moon'/>
-            <Games name='USUM' title='Pokémon Ultra Sun & Pokémon Ultra Moon'/>
-            <Games name='LGPE' title="Pokémon Let's Go, Pikachu! & Pokémon Let's Go, Eevee!"/>
-            <Games name='SWSH' title='Pokémon Sword & Pokémon Shield'/>
-            <Games name='BDSP' title='Pokémon Brilliant Diamond & Pokémon Shining Pearl'/>
-            <Games name='PLA' title='Pokémon Legends Arceus'/>
-            <Games name='SV' title='Pokémon Scarlet & Pokémon Violet'/>
+              <Games title='Pokémon X & Pokémon Y' src={game1}/>
+              <Games title='Pokémon Omega Ruby & Pokémon Alpha Sapphire' src={game2}/>
+              <Games title='Pokémon Sun & Pokémon Moon' src={game3}/>
+              <Games title='Pokémon Ultra Sun & Pokémon Ultra Moon' src={game4}/>
+              <Games title="Pokémon Let's Go, Pikachu! & Pokémon Let's Go, Eevee!" src={game5}/>
+              <Games title='Pokémon Sword & Pokémon Shield' src={game6}/>
+              <Games title='Pokémon Brilliant Diamond & Pokémon Shining Pearl' src={game7}/>
+              <Games title='Pokémon Legends Arceus' src={game8}/>
+              <Games title='Pokémon Scarlet & Pokémon Violet' src={game9}/>
             </div>
         </div>
     </section>
