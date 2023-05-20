@@ -215,14 +215,15 @@ h1 {
 /* CATALOGUE */
 
 .catalogue {
-    height: 230vh;
     background-image: url('../images/pattern.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 100px;
+    padding: 100px 0;
 }
 
 .catalogue h2 {
@@ -313,15 +314,89 @@ h1 {
     width: 150px;
 }
 
+@media screen and (max-width:488px) {
+    .catalogue h2{
+        font-size: 50px;
+    }
+
+    .catalogue-titles h3 {
+        font-size: 25px;
+    }
+    
+    .catalogue-titles h4 {
+        font-size: 15px;
+    }
+
+    .catalogue-section {
+        margin-bottom: 85px;
+    }
+
+    .carousel {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .carousel img {
+        width: 40%;
+    }
+
+    .availability p {
+        margin-top: -50px;
+        font-size: 25px;
+    }
+
+    .availability .games-container img {
+        width: 105px;
+    }
+}
+
+@media screen and (min-width:489px) and (max-width:753px) {
+    .catalogue-titles h3 {
+        font-size: 30px;
+    }
+    
+    .catalogue-titles h4 {
+        font-size: 17px;
+    }
+
+    .catalogue-section {
+        margin-bottom: 85px;
+    }
+
+    .carousel {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .carousel img {
+        width: 40%;
+    }
+
+    .availability p {
+        font-size: 30px;
+    }
+
+    .availability .games-container img {
+        width: 30%;
+    }
+}
+
 /* DELIVERY */
 
 .delivery {
     width: 100%;
-    height: 75vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
     background-image: url('../images/pattern.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -333,23 +408,22 @@ h1 {
 }
 
 .delivery .consoles {
-    max-width: 90%;
-    height: 60vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .delivery .consoles .console {
     background-color: #00000028;
-    height: 90%;
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 30px;
 }
 
 .delivery .consoles .console img {
@@ -370,227 +444,114 @@ h1 {
     text-align: center;
 }
 
-/* 
-
-RESPONSIVE
-
-Small Phones
-@media screen and (max-width: 400px) {
-    .banner {
-        justify-content: flex-start;
-    }
-
-    .banner .icons {
-        flex-direction: column;
-        padding-left: 10px;
-    }
-
-    .story-container {
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-
-    .story-container img {
-        padding-top: 20px;
-        width: 200px;
-    }
-
-    .story-text {
-        width: 85%;
-    }
-
-    .story-text p:first-child {
-        font-size: 23px;
-    }
-    
-    .story-text p:last-child {
-        font-size: 13px;
-        text-align: justify;
-    }
-
-    .catalogue {
-        height: 300vh;
-    }
-
-    .catalogue h2 {
-        font-size: 40px;
-    }
-
-    .catalogue-section {
-        height: 45vh;
-    }
-
-    .catalogue-titles h3 {
-        font-size: 25px;
-        font-weight: 500;
-        margin-top: 15px;
-    }
-    
-    .catalogue-titles h4 {
-        font-size: 15px;
-        font-weight: 300;
-    }
-
-    .catalogue-section:nth-child(2n+1) .catalogue-titles h3 {
-        align-self: flex-start;
-    }
-
-    .carousel img {
-        width: 40%;
-    }
-
-    .availability .games-container img {
-        width: 80px;
-    }
-
-    .delivery {
-        height: 120vh;
-        display: flex;
-    }
-
+@media screen and (max-width:400px) {
     .delivery h3 {
         font-size: 25px;
         text-align: center;
     }
 
     .delivery .consoles {
-        gap: 20px;
         flex-direction: column;
-        height: 85%;
     }
 
     .delivery .consoles .console {
-        width: 95%;
+        width: 70%;
     }
 
-    .delivery .consoles .console img {
-        width: 150px;
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
+    .delivery .consoles .console .instructions p {
+        font-size: 13px;
     }
 }
 
-Phones
-@media screen and (max-width: 576px) {
-    .banner {
-        justify-content: flex-start;
-    }
-
-    .banner .icons {
-        flex-direction: column;
-        padding-left: 10px;
-    }
-
-    .story-container {
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-
-    .story-container img {
-        padding-top: 20px;
-        width: 200px;
-    }
-
-    .story-text {
-        width: 85%;
-    }
-
-    .story-text p:first-child {
-        font-size: 23px;
-    }
-    
-    .story-text p:last-child {
-        font-size: 13px;
-        text-align: justify;
-    }
-
-    .catalogue {
-        height: 300vh;
-    }
-
-    .catalogue h2 {
-        font-size: 40px;
-    }
-
-    .catalogue-section {
-        height: 45vh;
-    }
-
-    .catalogue-titles h3 {
-        font-size: 25px;
-        font-weight: 500;
-        margin-top: 15px;
-    }
-    
-    .catalogue-titles h4 {
-        font-size: 15px;
-        font-weight: 300;
-    }
-
-    .catalogue-section:nth-child(2n+1) .catalogue-titles h3 {
-        align-self: flex-start;
-    }
-
-    .carousel img {
-        width: 40%;
-    }
-
-    .availability .games-container img {
-        width: 80px;
-    }
-
-    .delivery {
-        height: 120vh;
-        display: flex;
-    }
-
+@media screen and (min-width:401px)  and (max-width:1200px) {
     .delivery h3 {
-        font-size: 25px;
+        font-size: 30px;
         text-align: center;
     }
 
     .delivery .consoles {
-        gap: 20px;
         flex-direction: column;
-        height: 85%;
     }
 
     .delivery .consoles .console {
-        width: 95%;
-    }
-
-    .delivery .consoles .console img {
-        width: 150px;
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
+        width: 70%;
     }
 }
-  
-Tablets
-@media screen and (min-width: 577px) and (max-width: 768px) {
-    .banner {
-        justify-content: flex-start; Maybe put it at the bottom
+
+/* FOOTER */
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 6vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px;
+    gap: 20px;
+}
+
+.developer {
+    font-size: 20px;
+}
+
+.developer a {
+    font-size: 23px;
+    text-decoration: none;
+    color: #800040;
+    margin-left: 5px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 12px;
+}
+
+@media screen and (min-width:0px) and (max-width:700px) {
+    .developer {
+        font-size: 9px;
+    }
+    
+    .developer a {
+        font-size: 11px;
     }
 
+    .copyright {
+        font-size: 7px;
+        max-width: 47%;
+    }
 }
 
-Medium devices (laptops, desktops)
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width:701px) and (max-width:1350px) {
+    .developer {
+        font-size: 12px;
+    }
+    
+    .developer a {
+        font-size: 14px;
+    }
 
+    .copyright {
+        font-size: 7px;
+        max-width: 70%;
+    }
 }
 
-Large devices (large laptops, desktops)
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width:1351px) and (max-width:1700px) {
+    .developer {
+        font-size: 15px;
+    }
+    
+    .developer a {
+        font-size: 18px;
+    }
 
+    .copyright {
+        font-size: 9px;
+    }
 }
-
-Extra large devices (larger desktops, wide screens)
-@media screen and (min-width: 1201px) {
-
-}
-
-*/

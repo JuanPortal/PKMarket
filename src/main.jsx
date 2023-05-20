@@ -4,6 +4,7 @@ import './styles.css'
 import { Cover } from './Cover'
 import { Catalogue } from './Catalogue'
 import { Delivery } from './Delivery'
+import { Footer } from './Footer'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
@@ -11,5 +12,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Cover />
         <Catalogue />
         <Delivery />
+        <Footer />
     </React.StrictMode>
 )
