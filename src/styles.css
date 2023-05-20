@@ -33,32 +33,6 @@ h1 {
     align-items: flex-end;
 }
 
-.banner .icons {
-    width: 15%;
-    font-size: 35px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 150px 15px 0;
-}
-
-.banner .icons a:nth-child(1) {
-    color: #000;
-    font-size: 45px;
-}
-
-.banner .icons a:nth-child(2) {
-    color: #C13584;
-}
-
-.banner .icons a:nth-child(3) {
-    color: #273f73;
-}
-
-.banner .icons a:nth-child(4) {
-    color:  #000;
-}
-
 /* STORY */
 
 .story {
@@ -73,36 +47,169 @@ h1 {
 }
 
 .story-container {
-    width: 85%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.story-container img {
-    width: min(40%, 700px);
-}
-
-.story-text {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    overflow: hidden;
     gap: 30px;
 }
 
-.story-text p:first-child {
-    font-size: clamp(25px, 4vw, 45px);
+.story-image {
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.story-image img {
+    width: clamp(250px, 30vw, 1200px);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.story-text {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.story-text p:nth-child(1) {
+    font-size: clamp(30px, 3vw, 80px);
     font-weight: bold;
     line-height: 1.2;
 }
 
-.story-text p:last-child {
-    font-size: clamp(7px, 2vw, 20px);
+.story-text p:nth-child(2) {
+    font-size: clamp(15px, 1.1vw, 35px);
     text-align: justify;
+}
+
+.icons {
+    font-size: 45px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons .icon:nth-child(1) {
+    color: #000;
+    font-size: 55px;
+}
+
+.icons .icon:nth-child(2) {
+    color: #C13584;
+}
+
+.icons .icon:nth-child(3) {
+    color: #7289DA;
+}
+
+.icons .icon:nth-child(4) {
+    color: #273f73;
+}
+
+.icons .icon:nth-child(5) {
+    color:  #000;
+}
+
+.icons .icon:hover {
+    cursor: pointer;
+    scale: 98%;
+}
+
+@media screen and (max-width: 400px) {
+    .banner {
+        height: 17vh;
+    }
+
+    .story {
+        height: 83vh;
+    }
+
+    .story-container {
+        flex-direction: column;
+        height: 100%;
+        gap: 0px;
+    }
+
+    .story-image {
+        width: 100%;
+        height: 35%;
+        justify-content: center;
+    }
+
+    .story-image img {
+        width: 200px;
+    }
+
+    .story-text {
+        width: 100%;
+        height: 65%;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .story-text p:nth-child(1) {
+        font-size: 25px;
+    }
+
+    .story-text p:nth-child(2) {
+        font-size: 12px;
+    }
+
+    .icons {
+        scale: 70%;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 1111px) {
+    .banner {
+        height: 20vh;
+    }
+
+    .story {
+        height: 80vh;
+    }
+
+    .story-container {
+        flex-direction: column;
+        height: 100%;
+        gap: 0px;
+    }
+
+    .story-image {
+        width: 100%;
+        height: 35%;
+        justify-content: center;
+    }
+
+    .story-image img {
+        height: 94%;
+        max-height: 95%;
+        object-fit: contain;
+    }
+
+    .story-text {
+        width: 100%;
+        height: 65%;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .icons {
+        scale: 70%;
+        align-self: center;
+    }
 }
 
 /* CATALOGUE */
@@ -263,9 +370,11 @@ h1 {
     text-align: center;
 }
 
-/* RESPONSIVE */
+/* 
 
-/* Small Phones */
+RESPONSIVE
+
+Small Phones
 @media screen and (max-width: 400px) {
     .banner {
         justify-content: flex-start;
@@ -363,7 +472,7 @@ h1 {
     }
 }
 
-/* Phones */
+Phones
 @media screen and (max-width: 576px) {
     .banner {
         justify-content: flex-start;
@@ -461,25 +570,27 @@ h1 {
     }
 }
   
-/* Tablets */
+Tablets
 @media screen and (min-width: 577px) and (max-width: 768px) {
     .banner {
-        justify-content: flex-start; /* Maybe put it at the bottom */
+        justify-content: flex-start; Maybe put it at the bottom
     }
 
 }
 
-/* Medium devices (laptops, desktops) */
+Medium devices (laptops, desktops)
 @media screen and (min-width: 769px) and (max-width: 992px) {
 
 }
 
-/* Large devices (large laptops, desktops) */
+Large devices (large laptops, desktops)
 @media screen and (min-width: 993px) and (max-width: 1200px) {
 
 }
 
-/* Extra large devices (larger desktops, wide screens) */
+Extra large devices (larger desktops, wide screens)
 @media screen and (min-width: 1201px) {
 
 }
+
+*/
