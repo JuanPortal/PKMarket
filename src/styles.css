@@ -203,6 +203,7 @@ h1 {
         width: 100%;
         height: 65%;
         gap: 20px;
+        align-items: center;
         text-align: center;
     }
 
