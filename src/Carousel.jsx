@@ -20,10 +20,10 @@ export const Carousel = ({album}) => {
 
   return (
     <div className='carousel'>
-        <img src={imagesURLs[0]} alt="1st image" />
-        <img src={imagesURLs[1]} alt="2nd image" />
-        <img src={imagesURLs[2]} alt="3rd image" />
-        <img src={imagesURLs[3]} alt="4th image" />
+        <img src={imagesURLs[0]} alt="1st image" loading="lazy"/>
+        <img src={imagesURLs[1]} alt="2nd image" loading="lazy"/>
+        <img src={imagesURLs[2]} alt="3rd image" loading="lazy"/>
+        <img src={imagesURLs[3]} alt="4th image" loading="lazy"/>
     </div>
   )
 }

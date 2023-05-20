@@ -5,7 +5,7 @@ export const Story = () => {
   return (
     <div className='story'>
         <div className='story-container'>
-            <img src={peopleTrading} alt="People trading pokemon in a GameBoy Color" />
+            <img src={peopleTrading} title="People trading pokemon in a GameBoy Color" alt="People trading pokemon in a GameBoy Color" loading="lazy"/>
             <div className='story-text'>
                 <p>Never completed your Pokédex? Neither did I!</p>
                 <p>
