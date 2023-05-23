@@ -1,21 +1,20 @@
 import React from 'react'
-import peopleTrading from '../images/people_trading.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEbay, faInstagram, faDiscord, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { Toaster, toast } from 'sonner';
 
 export const Story = () => {
 
   const discordButton = () => {
+    toast.success('Portal#6608 copied to clipboard!')
     navigator.clipboard.writeText('Portal#6608')
-    alert('Portal#6608 copied to clipboard!')
   }
 
   return (
-    <div className='story'>
+    <section className='story'>
+      <Toaster richColors  position="top-center" />
       <div className='story-container'>
-        <div className="story-image">
-          <img src={peopleTrading} title="People trading pokemon in a GameBoy Color" alt="People trading pokemon in a GameBoy Color" loading="lazy" />
-        </div>
+        <div className="story-image"></div>
         <div className='story-text'>
           <p>Never completed your Pokédex? Neither did I!</p>
           <p>
@@ -34,6 +33,6 @@ export const Story = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
