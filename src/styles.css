@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -14,41 +15,33 @@ h1 {
 
 .cover {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* BANNER */
 
 .banner {
-    height: 35vh;
+    height: 25vh;
     width: 100%;
     background-image: url('../images/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
 }
 
 /* STORY */
 
 .story {
-    height: 65vh;
+    height: 75vh;
     width: 100%;
     background-image: url('../images/pattern.png');
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .story-container {
-    width: 90%;
-    height: 90%;
+    background: linear-gradient(to top, #ffffffe0 90%,#339c52 );
+    width: 100%;
+    height: 100%;
+    padding: 0 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,29 +51,27 @@ h1 {
 
 .story-image {
     width: 48%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.story-image img {
-    width: clamp(250px, 30vw, 1200px);
-    max-width: 100%;
-    max-height: 100%;
+    height: 65%;
+    background-image: url('../images/people_trading.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    border: 3px solid #000;
 }
 
 .story-text {
     width: 48%;
-    height: 100%;
+    height: 65%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 30px;
     overflow: hidden;
 }
 
 .story-text p:nth-child(1) {
+    text-align: center;
     font-size: clamp(30px, 3vw, 80px);
     font-weight: bold;
     line-height: 1.2;
@@ -126,36 +117,61 @@ h1 {
     scale: 98%;
 }
 
-@media screen and (max-width: 400px) {
-    .banner {
-        height: 17vh;
-    }
-
-    .story {
-        height: 83vh;
-    }
-
+@media screen and (min-width: 0px) and (max-width: 320px) {
     .story-container {
+        padding: 0;
         flex-direction: column;
-        height: 100%;
+        justify-content: center;
         gap: 0px;
     }
 
     .story-image {
-        width: 100%;
-        height: 35%;
-        justify-content: center;
+        order: 2;
+        width: 50%;
+        height: 30%;
     }
-
-    .story-image img {
-        width: 200px;
-    }
-
+    
     .story-text {
-        width: 100%;
-        height: 65%;
-        gap: 30px;
-        text-align: center;
+        order: 1;
+        width: 90%;
+        height: 60%;
+        align-items: center;
+    }
+
+    .story-text p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .story-text p:nth-child(2) {
+        font-size: 10px;
+    }
+
+    .icons {
+        scale: 0.6;
+        align-self: center;
+    }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 541px) {
+    .story-container {
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .story-image {
+        order: 2;
+        width: 50%;
+        height: 30%;
+    }
+    
+    .story-text {
+        order: 1;
+        width: 90%;
+        height: 60%;
+        align-items: center;
     }
 
     .story-text p:nth-child(1) {
@@ -167,49 +183,47 @@ h1 {
     }
 
     .icons {
-        scale: 70%;
+        scale: 0.6;
         align-self: center;
     }
+
 }
 
-@media screen and (min-width: 401px) and (max-width: 1111px) {
-    .banner {
-        height: 20vh;
-    }
-
-    .story {
-        height: 80vh;
-    }
-
+@media screen and (min-width: 542px) and (max-width: 924px) {
     .story-container {
+        padding: 0;
         flex-direction: column;
-        height: 100%;
+        justify-content: center;
         gap: 0px;
     }
 
     .story-image {
-        width: 100%;
-        height: 35%;
-        justify-content: center;
+        order: 2;
+        width: 50%;
+        height: 30%;
     }
-
-    .story-image img {
-        height: 94%;
-        max-height: 95%;
-        object-fit: contain;
-    }
-
+    
     .story-text {
-        width: 100%;
-        height: 65%;
-        gap: 20px;
+        order: 1;
+        width: 90%;
+        height: 60%;
         align-items: center;
-        text-align: center;
     }
 
     .icons {
-        scale: 70%;
+        scale: 0.8;
         align-self: center;
+    }
+
+}
+
+@media screen and (min-width: 925px) and (max-width: 1366px) {
+    .story-container {
+        padding: 0 2%;
+    }
+    
+    .icons {
+        scale: 0.8;
     }
 }
 
