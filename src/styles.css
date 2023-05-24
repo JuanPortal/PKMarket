@@ -37,7 +37,7 @@ h1 {
     background: linear-gradient(to top, #ffffffed 90%,#339c52 );
     width: 100%;
     height: 75vh;
-    padding: 5% 10%;
+    padding: 5% 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,22 +120,21 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* gap: 100px; */
-    padding: 100px 10%;
+    gap: 30px;
+    padding: 5% 20px;
 }
 
 .catalogue h2 {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .catalogue-section {
-    background-color: red;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .catalogue-titles {
@@ -147,19 +146,31 @@ h1 {
 
 .catalogue-section:nth-child(2n) .catalogue-titles h3 {
     align-self: flex-start;
+    text-align: start;
 }
 
 .catalogue-section:nth-child(2n+1) .catalogue-titles h3 {
     align-self: flex-end;
+    text-align: end;
+}
+
+.catalogue-section:nth-child(2n) .catalogue-titles h4 {
+    align-self: flex-start;
+    text-align: start;
+}
+
+.catalogue-section:nth-child(2n+1) .catalogue-titles h4 {
+    align-self: flex-end;
+    text-align: end;
 }
 
 .catalogue-titles h3 {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
 }
 
 .catalogue-titles h4 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -174,8 +185,11 @@ h1 {
 .carousel {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 24%);
-    justify-content: space-between;
+    grid-template-columns: repeat(2, 48%);
+    grid-template-rows: repeat(2, 48%);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .carousel img {
@@ -193,24 +207,22 @@ h1 {
 }
 
 .availability p {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
     align-self: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .availability .games-container {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .availability .games-container img {
-    width: 150px;
+    width: 100%;
 }
-
 
 
 /* DELIVERY */
@@ -444,6 +456,7 @@ footer {
 @media (min-width: 900px) {       
     .story {
         flex-direction: row;
+        padding: 5% 10%;
     }
 
     .story-text {
@@ -505,6 +518,18 @@ footer {
 
     .icons .icon:nth-child(1) {
         font-size: 60px;
+    }
+    
+    .catalogue h2 {
+        font-size: 60px;
+    }
+
+    .catalogue-titles h3 {
+        font-size: 35px;
+    }
+    
+    .catalogue-titles h4 {
+        font-size: 20px;
     }
 }
 
