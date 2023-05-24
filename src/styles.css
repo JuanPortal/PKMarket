@@ -202,22 +202,23 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    gap: 10px;
 }
 
 .availability p {
     font-size: 25px;
     font-weight: 500;
     align-self: flex-start;
-    margin-bottom: 10px;
 }
 
 .availability .games-container {
-    width: 100%;
+    width: min(70%, 500px);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    gap: 15px;
 }
 
 .availability .games-container img {
@@ -228,6 +229,7 @@ h1 {
 /* DELIVERY */
 
 .delivery {
+    padding-top: 30px;
     background-color: #ffffffed;
     width: 100%;
     display: flex;
@@ -425,6 +427,14 @@ footer {
     .icons .icon:nth-child(1) {
         font-size: 32px;
     }
+
+    .catalogue h2 {
+        font-size: 45px;
+    }    
+
+    .delivery h3 {
+        font-size: 25px;
+    }
 }
 
 @media (min-width: 767px) {             /* GENERAL */
@@ -450,6 +460,22 @@ footer {
 
     .story-image {
         height: 40%;
+    }
+
+    .catalogue-section {
+        gap: 30px;
+    }
+
+    .catalogue h2 {
+        font-size: 60px;
+    }
+
+    .catalogue-titles h3, .delivery h3, .availability p {
+        font-size: 32px;
+    }
+    
+    .catalogue-titles h4 {
+        font-size: 18px;
     }
 }
 
@@ -499,6 +525,33 @@ footer {
     
     .story-text p:nth-child(2) {
         font-size: 16px;
+    }
+
+    .catalogue {
+        padding: 5% 10%;
+    }
+
+    .catalogue h2 {
+        font-size: 60px;
+    }
+
+    .catalogue-titles h3, .delivery h3, .availability p {
+        font-size: 32px;
+    }
+    
+    .catalogue-titles h4 {
+        font-size: 18px;
+    }
+
+    .carousel {
+        gap: 0;
+        justify-content: space-between;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .carousel img {
+        width: 98%;
     }
 }
 
