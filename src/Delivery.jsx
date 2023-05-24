@@ -4,7 +4,7 @@ import console2 from '../images/Switch.png'
 
 export const Delivery = () => {
   return (
-    <div className='delivery'>
+    <section className='delivery'>
         <h3>How will I receive my pokémon?</h3>
         <div className="consoles">
             <div className="console">
@@ -24,6 +24,6 @@ export const Delivery = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
