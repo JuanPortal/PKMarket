@@ -387,12 +387,6 @@ footer {
     }
 }
 
-@media (min-width: 360px) and (orientation: landscape) {
-    .story-text p:nth-child(1) {
-        color: antiquewhite;
-    }
-}
-
 @media (min-width: 485px) {
     .story-text {
         height: 70%;
