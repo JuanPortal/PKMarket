@@ -12,7 +12,6 @@ export const Story = () => {
 
   return (
     <section className='story'>
-      <Toaster richColors  position="top-center" />
         <div className='story-text'>
           <p>Never completed your Pokédex? Neither did I!</p>
           <p>
@@ -30,7 +29,7 @@ export const Story = () => {
             <a className='icon' href="https://github.com/JuanPortal/PKMarket" target='_blank'><FontAwesomeIcon icon={faGithub} /></a>
           </div>
         </div>
-        <div className="story-image"></div>
+        <div className="story-image"><Toaster richColors  position="top-center" /></div>
     </section>
   )
 }

@@ -109,6 +109,7 @@ h1 {
     background-position: center;
     border-radius: 20px;
     border: 3px solid #000;
+    overflow: hidden;
 }
 
 /* CATALOGUE */
@@ -406,7 +407,11 @@ footer {
     }
 
     .icons {
-        scale: .8;
+        scale: 20px;
+    }
+
+    .icons .icon:nth-child(1) {
+        font-size: 32px;
     }
 }
 
@@ -420,11 +425,15 @@ footer {
     }
 
     .story-text p:nth-child(2) {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .icons {
-        scale: 1;
+        scale: 25px;
+    }
+
+    .icons .icon:nth-child(1) {
+        font-size: 40px;
     }
 
     .story-image {
@@ -443,7 +452,6 @@ footer {
         height: 80%;
         align-items: flex-start;
         justify-content: space-between;
-        background-color: red;
     }
     
     .story-text p:nth-child(1) {
@@ -463,22 +471,58 @@ footer {
 
     .icons {
         align-self: flex-end;
-        align-items: flex-end;
+        font-size: 30px;
     }
 
-    .icons>*{
-        border: 1px solid black;
+    .icons .icon:nth-child(1) {
+        font-size: 48px;
     }
 }
 
-@media (min-width: 1366px) {             /* GENERAL */
+@media (min-width: 1366px) {             /* GENERAL */    
     .story-text p:nth-child(1) {
-        color: blue;
+        font-size: 32px;
+    }
+    
+    .story-text p:nth-child(2) {
+        font-size: 16px;
     }
 }
 
 @media (min-width: 1920px) {             /* GENERAL */
     .story-text p:nth-child(1) {
-        color: green;
+        font-size: 40px;
+    }
+    
+    .story-text p:nth-child(2) {
+        font-size: 22px;
+    }
+
+    .icons {
+        font-size: 37px;
+        gap: 20px;
+    }
+
+    .icons .icon:nth-child(1) {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 2500px) {             /* GENERAL */
+    .story-text p:nth-child(1) {
+        font-size: 46px;
+    }
+    
+    .story-text p:nth-child(2) {
+        font-size: 27px;
+    }
+
+    .icons {
+        font-size: 45px;
+        gap: 25px;
+    }
+
+    .icons .icon:nth-child(1) {
+        font-size: 65px;
     }
 }
