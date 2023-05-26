@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './styles.css'
 import { Cover } from './Cover'
 import { Catalogue } from './Catalogue'
 import { Delivery } from './Delivery'
 import { Footer } from './Footer'
+import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>

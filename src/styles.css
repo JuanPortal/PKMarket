@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url('../images/pattern.png');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/pkmarket-e4dd6.appspot.com/o/pattern.webp?alt=media&token=f4e3af52-6d5b-4507-b690-2b085a27d202');
 }
 
 h1 {
@@ -26,7 +26,7 @@ h1 {
 .banner {
     height: 25vh;
     width: 100%;
-    background-image: url('../images/banner.png');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/pkmarket-e4dd6.appspot.com/o/banner.webp?alt=media&token=a3fe65f5-ddbf-420f-affd-c5c47bf19b49');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -103,7 +103,7 @@ h1 {
 .story-image {
     width: 100%;
     height: 25%;
-    background-image: url('../images/people_trading.png');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/pkmarket-e4dd6.appspot.com/o/people_trading.webp?alt=media&token=7a0f291b-79ee-44c3-9529-c47ec10e4420');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

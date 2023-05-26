@@ -1,7 +1,6 @@
 import React from 'react'
 import { Carousel } from './Carousel'
 
-
 export const Section = ({type, description}) => {
   return (
     <div className='catalogue-section'>

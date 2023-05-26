@@ -6,5 +6,5 @@
 
 This is the website for my online store
 
-![image](https://github.com/JuanPortal/PKMarket/assets/78442505/c8c9d9b6-1cf8-4bfb-84d6-e365751d0186)
+![image](https://firebasestorage.googleapis.com/v0/b/pkmarket-e4dd6.appspot.com/o/preview.webp?alt=media&token=6e053903-d282-4461-a06e-33b936e9f9b3)
 
